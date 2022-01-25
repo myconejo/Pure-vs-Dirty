@@ -274,6 +274,7 @@ int main() {
             if (stt) traverse(list1);
         }
     }
+    destruct(list1);
     printf("--------------------------------------------------------------------\n");
     return 0;
 }
