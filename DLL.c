@@ -192,9 +192,7 @@ int main() {
         char cmd[20];
         printf(">> enter a command: ");
         scanf("%19s", cmd);
-        if (!strcmp(cmd, "exit")) {
-            printf("final list: ");
-            traverse(list1);
+        if (!strcmp(cmd, "exit")) {ex
             status = 0;
         }
         else {
