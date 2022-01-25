@@ -205,6 +205,7 @@ editList l = do
             let n = (read cn :: Integer)
             trv $ delN l n
             editList $ delN l n
+            
         _           -> do
             promptLn $ ">> no such command <" ++ cmd ++ ">"
             promptLn $ ">> use --help to see the list of the commands"
