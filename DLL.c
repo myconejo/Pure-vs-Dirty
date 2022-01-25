@@ -192,7 +192,8 @@ int main() {
         char cmd[20];
         printf(">> enter a command: ");
         scanf("%19s", cmd);
-        if (!strcmp(cmd, "exit")) {ex
+        if (!strcmp(cmd, "exit")) {
+            destruct(list1);
             status = 0;
         }
         else {
@@ -272,7 +273,6 @@ int main() {
             if (stt) traverse(list1);
         }
     }
-    destruct(list1);
     printf("--------------------------------------------------------------------\n");
     return 0;
 }
