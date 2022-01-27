@@ -1,5 +1,5 @@
-# Haskell-vs-C
-Linked List, Binary Search Tree in Functional (Haskell), OOP(C++/Python) and Imperitive(C)
+# Purely Functional vs Dirty Imperitive
+Linked List, Binary Search Tree in Purely Functional (Haskell) and Imperitive (C, C++, Python) languages 
 
 ## Linked List
 - `DLL.c`   Linked List implemented with C
