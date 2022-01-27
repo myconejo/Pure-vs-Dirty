@@ -214,19 +214,34 @@ int pop(struct Node* n, int k) {
 
 void traverse(struct Node* n) {
     if (n == NULL) {
-        printf("empty tree ");
+        printf(" empty tree ");
         return;
     }
     if (n->left != NULL) 
     {
+        printf("(");
         traverse(n->left);
+        printf(")-");
     }
-    printf("%d ", n->key, n->val);
+    printf("%d", n->key, n->val);
     if (n->right != NULL)
     {
+        printf("-(");
         traverse(n->right);
+        printf(")");
     }
     return;
+}
+
+void reset(struct Node* n) {
+    if (n == NULL) return;
+    if (n->left != NULL) {
+        reset(n->left);
+    }
+    if (n->right != NULL) {
+        reset(n->right);
+    }
+    free(n);
 }
 
 int getVal(struct Node* n, int k) {
@@ -292,13 +307,14 @@ int main() {
         else if (!strcmp(cmd, "traverse") || !(strcmp(cmd, "trv")))
         {
             printf(">> traversing the tree\n");
-            printf("[ ");
+            printf("[");
             traverse(tree->root);
             printf("]\n");
         }
         else if (!strcmp(cmd, "reset"))
         {
             printf(">> resetting the tree\n");
+            reset(tree->root);
             destruct(tree);
             struct Tree* tree = construct();
         }
