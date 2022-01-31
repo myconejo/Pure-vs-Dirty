@@ -11,3 +11,7 @@ Linked List, Binary Search Tree in Purely Functional (Haskell) and Imperitive (C
 - `tree.cpp`BST implemented with C++ (OOP)
 - `tree.hs` BST implemented with Python (OOP)
 - `tree.hs` BST implemented with Haskell (Purely Functional)
+
+## Sort
+- `sort.cpp`  Sorting algorithms in C++ (OOP)
+- `sort.hs`   Sorting algorithms in Haskell (Purely Functional)
